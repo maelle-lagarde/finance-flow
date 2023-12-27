@@ -1,14 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-.App {
-  background-color: white;
-  color: black;
+p, h1 {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .App {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B191F;
+  }
+
+  /*********** LOGIN & REGISTER FORM ***********/
+
+  .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .register-form input {
+    margin-bottom: 10px;
+    width: 60%;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    background-color: #A238FF;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .register-form input::placeholder {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  button#register, button#signin {
+    padding: 10px 15px 10px 15px;
+    width: 68%;
+    border: 1px solid #5e5e5e;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  button#register:hover, button#signin:hover {
+    background-color: #5e5e5e;
+  }
+
+  .login-form input {
+    margin-bottom: 10px;
+    width: 60%;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    background-color: #A238FF;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .login-form input::placeholder {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  p#question {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-top: 1px solid #5e5e5e;
+    width: 100vw;
+    cursor: pointer;
+  }
 }
